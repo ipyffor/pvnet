@@ -1,8 +1,9 @@
 #!/bin/bash
 export ROOT_PATH=$1
 mkdir -p $ROOT_PATH/ceres
+mv ceres-solver-1.14.0.tar.gz $ROOT_PATH/ceres/
 cd $ROOT_PATH/ceres
-mv ../ceres-solver-1.14.0.tar.gz ./
+
 #wget http://ceres-solver.org/ceres-solver-1.14.0.tar.gz
 tar xvzf ceres-solver-1.14.0.tar.gz
 cd ceres-solver-1.14.0
